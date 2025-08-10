@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced HTML5: Enhancing Content</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+
+    fieldset {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    video, audio {
+      margin-top: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page showcases advanced HTML5 content and a fully structured, validated form.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📋 Organized Information</h2>
+      
+      <h3>Unordered List: My Favorite Tools</h3>
+      <ul>
+        <li>Visual Studio Code</li>
+        <li>Git & GitHub</li>
+        <li>Chrome DevTools</li>
+        <li>Figma</li>
+      </ul>
+
+      <h3>Ordered List: Steps to Build a Web Page</h3>
+      <ol>
+        <li>Write semantic HTML structure</li>
+        <li>Style with CSS</li>
+        <li>Add interactivity with JavaScript (optional)</li>
+        <li>Host the project on GitHub</li>
+      </ol>
+
+      <h3>📊 Course Schedule Table</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML5 Basics</td>
+            <td>9:00 AM – 11:00 AM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Forms & Validation</td>
+            <td>9:00 AM – 11:00 AM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Media and Layout</td>
+            <td>9:00 AM – 11:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>🎵 Media Section</h2>
+
+      <h3>Image Example</h3>
+      <img src="https://via.placeholder.com/600x200" alt="Placeholder banner image" />
+
+      <h3>Audio Example</h3>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video Example</h3>
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>📝 User Registration Form</h2>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="e.g. name@example.com" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="4" maxlength="12" autocomplete="username">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6">
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="language">Preferred Language:</label>
+          <select id="language" name="language" required>
+            <option value="">--Select--</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+          </select>
+
+          <label>Newsletter Subscription:</label>
+          <input type="radio" id="sub-yes" name="newsletter" value="yes" required>
+          <label for="sub-yes">Yes</label>
+
+          <input type="radio" id="sub-no" name="newsletter" value="no">
+          <label for="sub-no">No</label>
+
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            I agree to the terms and conditions
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ke-mboi | PLP Web Technologies</p>
+  </footer>
+
+</body>
+</html>
